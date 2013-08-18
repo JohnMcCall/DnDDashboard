@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>John and Zack's D&amp;D Web&ndash;Thingy</title>
+	<link href="css/redmond/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+    <link href="css/dndpage.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+    <script src="js/dndpage.js"></script>
+</head>
+
+<body>
+    <h1>John and Zack's D&amp;D Web&ndash;Thingy</h1>
+    <div class='left-panel'>
+        <p>Left Panel</p>
+        <div class='char-info'>
+            <p>Name:
+            Class:
+            Race:</p>
+
+            <div id="healthbar"><div id='health'></div></div>
+            <div id="manabar"><div id='mana'></div></div>
+            <div id="expbar"><div id='exp'></div></div>
+        </div>
+
+        <div class='stats'>
+            <p>Str:</p>
+            <p>Con:</p>
+            <p>Dex:</p>
+            <p>Wis:</p>
+            <p>Will:</p>
+            <p>Int:</p>
+            <p>Chr:</p>
+        </div>
+
+        <div class='equipment'>
+            <p>Drag and droppy stuff will be going on here eventually</p>
+        </div>
+    </div>
+
+    <div class='right-panel'>
+        <p>Inventory!</p>
+        <p>Capacity:</p>
+        <ul id="sortable">
+              <li class="ui-state-default">1</li>
+              <li class="ui-state-default">2</li>
+              <li class="ui-state-default">3</li>
+              <li class="ui-state-default">4</li>
+              <li class="ui-state-default">5</li>
+              <li class="ui-state-default">6</li>
+              <li class="ui-state-default">7</li>
+              <li class="ui-state-default">8</li>
+              <li class="ui-state-default">9</li>
+              <li class="ui-state-default">10</li>
+              <li class="ui-state-default">11</li>
+              <li class="ui-state-default">12</li>
+              <li class="ui-state-default">13</li>
+              <li class="ui-state-default">14</li>
+              <li class="ui-state-default">15</li>
+              <li class="ui-state-default">16</li>
+        </ul>
+    </div>
+    <div class='testing'>
+        <input type="text" id='changer'><br />
+        <button id='hp-damage' type="button" onclick="updateHealth(true)">Take Damage</button>
+        <button id='hp-heal' type="button" onclick="updateHealth(false)">Heal</button><br />
+
+        <button id='mp-damage' type="button" onclick="updateMana(true)">Use Mana</button>
+        <button id='mp-restore' type="button" onclick="updateMana(false)">Restore Mana</button><br />
+
+        <button id='exp-lose' type="button" onclick="updateExp(true)">Lose Exp</button>
+        <button id='exp-gain' type="button" onclick="updateExp(false)">Gain Exp</button>
+    </div>
+
+</body>
+</html>
