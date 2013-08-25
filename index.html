@@ -19,10 +19,22 @@
             Class:
             Race:</p>
 
-            <div id="healthbar"><div id='health'></div></div>
-            <div id="manabar"><div id='mana'></div></div>
-            <div id="expbar"><div id='exp'></div></div>
+            <div class='bar' id="healthbar"><div id='health'></div></div>
+            <div class='bar' id="manabar"><div id="mana"></div></div>
+            <div class='bar' id="expbar"><div id="exp"></div></div>
         </div>
+
+    	<div class='bar-modifiers'>
+	        <input type="text" id='changer'><br />
+	        <button id='hp-damage' type="button" onclick="updateHealth(true)">Take Damage</button>
+	        <button id='hp-heal' type="button" onclick="updateHealth(false)">Heal</button><br />
+
+	        <button id='mp-damage' type="button" onclick="updateMana(true)">Use Mana</button>
+	        <button id='mp-restore' type="button" onclick="updateMana(false)">Restore Mana</button><br />
+
+	        <button id='exp-lose' type="button" onclick="updateExp(true)">Lose Exp</button>
+	        <button id='exp-gain' type="button" onclick="updateExp(false)">Gain Exp</button>
+    	</div>
 
         <div class='stats'>
             <p>Str:</p>
@@ -61,17 +73,7 @@
               <li class="ui-state-default">16</li>
         </ul>
     </div>
-    <div class='testing'>
-        <input type="text" id='changer'><br />
-        <button id='hp-damage' type="button" onclick="updateHealth(true)">Take Damage</button>
-        <button id='hp-heal' type="button" onclick="updateHealth(false)">Heal</button><br />
 
-        <button id='mp-damage' type="button" onclick="updateMana(true)">Use Mana</button>
-        <button id='mp-restore' type="button" onclick="updateMana(false)">Restore Mana</button><br />
-
-        <button id='exp-lose' type="button" onclick="updateExp(true)">Lose Exp</button>
-        <button id='exp-gain' type="button" onclick="updateExp(false)">Gain Exp</button>
-    </div>
 
 </body>
 </html>
