@@ -1,53 +1,80 @@
+    #healthbar {
+        border-width: 0px;
+        color: #C80000;
+border-radius: 5px;
+    }
+
+    #manabar {
+            border-width: 0px;
+            color: #0E667F;
+        }
+
+    #expbar {
+            border-width: 0px;
+            color: #AFD622;
+        }   
+
+    .ui-progressbar-value {
+        border-radius: 5px;
+    }
+
     #healthbar .ui-progressbar-value {
-        background: #C80000;
+            border-width: 0px;
+            background: #C80000;
+
     }
 
     #manabar .ui-progressbar-value {
-            background: #4073FF;
+            border-width: 0px;
+            background: #0E667F ;
     }
 
     #expbar .ui-progressbar-value {
+            border-width: 0px;
             background: #AFD622;
     }
-    
+
     #sortable { 
         list-style-type: none; 
         margin: 0; 
         padding: 0; 
-        width: 450px; 
+        
     }
 
     #sortable li { 
         margin: 3px 3px 3px 0; 
         padding: 1px; 
         float: left; 
-        width: 100px; 
-        height: 90px; 
         font-size: 4em; 
         text-align: center; 
     }
 
-    .bar {
-        padding:2px;
+    .ui-widget-content {
+        background: #CC853F;
+       
     }
 
-body {background-color:#cc873f;}
+    body {
+        background-color:#cc873f;
+        color: #593512;
+    }
 
     .stats-panel {
         float:left;
-        width:49%;
+        width:33%;
         height:100%;
     }
 
     .equipment-panel {
-        float:right;
-        height: 100%;
+        float:left;
+        width: 33%;
+        height:100%;
     }
 
     .inventory-panel {
-            float:right;
-            width:50%;
-            height:100%;
+        float:left;
+        width:33%;
+        height:100%;
     }
 
     .char-info {
@@ -60,7 +87,7 @@ body {background-color:#cc873f;}
     }
 
     .equipment {
-        float:right;
+        float:rightborder-color: #593512;;
     }
 
 .button {
@@ -83,3 +110,10 @@ body {background-color:#cc873f;}
            box-shadow: 0px 0px 2px 0px rgba(0,0,0,1);
    text-shadow: none;
 }
+.ui-state-default
+{
+  border-color: #593512;
+   
+        background: #FFB369;
+}
+

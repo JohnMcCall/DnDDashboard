@@ -8,6 +8,18 @@
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/jquery-ui-1.10.3.custom.js"></script>
     <script src="js/dndpage.js"></script>
+<style>
+  #sortable1, #sortable2 { list-style-type: none; margin: 0; padding: 0 0 0; float: left; margin-right: 10px; background-color: #7f4f1b;}
+  #sortable1 li, #sortable2 li { margin: 5px 5px 5px 5px; padding: 5px; font-size: 1.2em; color: #0e627f; width: 120px;  }
+  </style>
+  <script>
+  $(function() {
+    $( "#sortable1, #sortable2" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  });
+  </script>
+
 </head>
 
 <!-- https://kuler.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=2&name=My%20Kuler%20Theme&mode=rgb&rgbvalues=0.5,0.33165332116097657,0.15522430340959714,1,0.8097902957556414,0.6104486068191943,1,0.6633066423219531,0.3104486068191943,0.5,0.4048951478778207,0.30522430340959716,0.8,0.5306453138575625,0.24835888545535545&swatchOrder=0,1,2,3,4 -->
@@ -47,13 +59,25 @@
     </div>
 
     <div class='equipment-panel'>
-            <p>Drag and droppy stuff will be going on here eventually</p>
+        <p>Capacity:</p>
+        <ul class="connectedSortable" id="sortable1">
+              <li class="ui-state-default">1</li>
+              <li class="ui-state-default">2</li>
+              <li class="ui-state-default">3</li>
+              <li class="ui-state-default">4</li>
+              <li class="ui-state-default">11</li>
+              <li class="ui-state-default">12</li>
+              <li class="ui-state-default">13</li>
+              <li class="ui-state-default">14</li>
+              <li class="ui-state-default">15</li>
+              <li class="ui-state-default">16</li>
+        </ul>
     </div>
 
     <div class='inventory-panel'>
         <p>Inventory!</p>
         <p>Capacity:</p>
-        <ul id="sortable">
+        <ul class="connectedSortable" id="sortable2">
               <li class="ui-state-default">1</li>
               <li class="ui-state-default">2</li>
               <li class="ui-state-default">3</li>
