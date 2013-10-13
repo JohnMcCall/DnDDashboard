@@ -31,17 +31,23 @@
         padding:2px;
     }
 
-    .left-panel {
+body {background-color:#cc873f;}
+
+    .stats-panel {
         float:left;
         width:49%;
         height:100%;
     }
 
-    .right-panel {
+    .equipment-panel {
+        float:right;
+        height: 100%;
+    }
+
+    .inventory-panel {
             float:right;
             width:50%;
             height:100%;
-            border-left:2px solid black;
     }
 
     .char-info {
@@ -56,3 +62,24 @@
     .equipment {
         float:right;
     }
+
+.button {
+   background-color: rgba(127,104,78,1);
+   -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,1);
+      -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,1);
+           box-shadow: 2px 2px 2px 0px rgba(0,0,0,1);
+   padding: 7px;
+   display: inline-block;
+   font-family: Arial;
+   color: rgba(225,206,156,1);
+   font-weight: bold;
+}
+.button:hover {
+   color: rgba(225,169,79,1);
+}
+.button:active {
+   -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,1);
+      -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,1);
+           box-shadow: 0px 0px 2px 0px rgba(0,0,0,1);
+   text-shadow: none;
+}
